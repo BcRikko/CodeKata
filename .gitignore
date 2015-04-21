@@ -1,0 +1,11 @@
+bower_components
+bin
+obj
+[Pp]ackages
+
+*.js
+*.map
+*.suo
+*.csproj.user
+
+packages.config

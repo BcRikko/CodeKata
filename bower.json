@@ -1,0 +1,19 @@
+{
+  "name": "CodeKata",
+  "version": "0.0.0",
+  "authors": [
+    "bc_rikko <s.shin1106@gmail.com>"
+  ],
+  "description": "Practice of CodeKata",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jasmine": "~2.2.1"
+  }
+}
