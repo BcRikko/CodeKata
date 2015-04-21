@@ -9,4 +9,9 @@ describe('CodeKata02: KarateChop',() => {
         var result = this.karate.chop(3, []);
         expect(result).toBe(-1);
     });
+
+    it('要素1つで見つからない場合、-1が返ってくる',() => {
+        var result = this.karate.chop(3, [1]);
+        expect(result).toBe(-1);
+    });
 });
