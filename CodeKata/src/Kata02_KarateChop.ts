@@ -1,13 +1,19 @@
 ﻿class KarateChop {
     chop(target: number, array: number[]): number {
-        var index = -1;
+        var head = 0;
+        var tail = array.length - 1;
 
-        for (var i = 0; i < array.length; i++) {
-            if (target === array[i]) {
-                index = i;
+        while (head <= tail) {
+            var center = Math.floor((head + tail) / 2);
+
+            if (target === array[center]) {
+                return center;
+            } else if (target < array[center]) {
+                tail = center - 1;
+            } else {
+                head = center + 1;
             }
         }
-
-        return index;
+        return -1;
     }
 }
